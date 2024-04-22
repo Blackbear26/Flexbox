@@ -12,6 +12,27 @@ body {
 .container{
     background-color: cadetblue;
     display: flex;
+    /* display: inline-flex;
+    se ajusta al tamaño disponible de los items (ancho)
+    y el "flex" se ajusta al espacio disponible */
+
+    flex-direction: row;  /* este es el valor por defauld */
+    justify-content: end; /* manda el contenido al final */
+    justify-content: center; /* centra el contenido */
+    justify-content: space-around; /* distribuye el spacio de alrededor de los elemntos */
+    justify-content: space-between; /* distribuslle los espacios entre los elementos */
+    justify-content: space-evenly; /* distribuye de ambas manera */
+    
+
+/*     flex-direction: row-reverse; cambia la direccion de los elementos 
+
+    flex-direction: column;  se cmabian las direcciones 
+
+    flex-direction: column-reverse;  cambian su direccion ahora es de abajo hacia arriba  */
+    
+
+
+
 }
 
 .item{
@@ -22,4 +43,5 @@ body {
     font-size: 24px;
     font-weight: bold;
     padding-top: 32px;
+    border: 1px solid ;
 }
