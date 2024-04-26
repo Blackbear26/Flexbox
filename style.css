@@ -1,6 +1,6 @@
-*{
-    padding:0 ;
-    margin:0 ;
+* {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
@@ -9,33 +9,53 @@ body {
     font-family: sans-serif;
 }
 
-.container{
+.container {
     background-color: cadetblue;
     display: flex;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse
+    
+
+        /*  align-items: flex-start; */
+        /* alinea hacia arriba */
+        /*  align-items: flex-end; */
+        /* alinea hacia abajo */
+        /* align-items: center; */
+        /* alinea al centro */
+        /*  align-items: stretch; */
+        /* estira hacia abajo los items (los items no deben tener alto definido) */
+        /* align-items: baseline */
+    ;
+    /*  */
+
+    /* vamos a utilizar algo que se le llama "seudi clase" para seleccionar los items individualmente */
     /* display: inline-flex;
     se ajusta al tamaño disponible de los items (ancho)
     y el "flex" se ajusta al espacio disponible */
 
-    flex-direction: row;  /* este es el valor por defauld */
-    justify-content: end; /* manda el contenido al final */
-    justify-content: center; /* centra el contenido */
-    justify-content: space-around; /* distribuye el spacio de alrededor de los elemntos */
-    justify-content: space-between; /* distribuslle los espacios entre los elementos */
-    justify-content: space-evenly; /* distribuye de ambas manera */
-    
+    /*flex-direction: row;   este es el valor por defauld 
+    justify-content: end;  manda el contenido al final 
+    justify-content: center;  centra el contenido 
+    justify-content: space-around;  distribuye el spacio de alrededor de los elemntos 
+    justify-content: space-between;  distribuslle los espacios entre los elementos 
+    justify-content: space-evenly;  distribuye de ambas manera */
 
-/*     flex-direction: row-reverse; cambia la direccion de los elementos 
+
+
+    /*     flex-direction: row-reverse; cambia la direccion de los elementos 
 
     flex-direction: column;  se cmabian las direcciones 
 
     flex-direction: column-reverse;  cambian su direccion ahora es de abajo hacia arriba  */
-    
+
 
 
 
 }
 
-.item{
+.item {
     background-color: cornflowerblue;
     width: 100px;
     height: 100px;
@@ -43,5 +63,30 @@ body {
     font-size: 24px;
     font-weight: bold;
     padding-top: 32px;
-    border: 1px solid ;
+    border: 1px solid;
 }
+
+/* .item:nth-child(1) {
+    background-color: rgb(62, 100, 102);
+    padding-top: 100px;
+    font-size: large;
+    height: 150px;
+}
+.item:nth-child(2) {
+    background-color: rgb(78, 119, 149);
+    padding-top: 150px;
+    font-size: larger;
+    height: 200px;
+}
+.item:nth-child(3) {
+    background-color: rgb(62, 65, 102);
+    padding-top: 200px;
+    font-size: medium;
+    height: 250px;
+}
+.item:nth-child(4) {
+    background-color: rgb(102, 62, 99);
+    padding-top: 300px;
+    font-size: small;
+    height: 150;
+} */
