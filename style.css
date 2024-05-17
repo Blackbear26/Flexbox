@@ -9,22 +9,14 @@ body {
     font-family: sans-serif;
 }
 
-/* gap -> espacio entre elemntos
-
-recibe valores ene numeros con unidades relativas o absolutas
-
-esta propiedad se pasa al contenedor */
 
 .container {
     background-color: cadetblue;
     display: flex;
-    flex-wrap: wrap;
-    /* gap: 24px; */
-    /*  gap: 3rem; */
-    column-gap: 16px; /* espacio entre los elementos vertical */
-    row-gap: 32px; /* espacio entre los elementos orizontal */
-    gap: 4px 32px; 
-    width: 500px;
+    height: 500px;
+    align-items: center;
+    justify-content: space-between;
+
 }
 
 .item {
@@ -37,3 +29,21 @@ esta propiedad se pasa al contenedor */
     font-weight: bold;
     border: 1px solid;
 }
+
+.solito{
+    align-self: stretch;
+    height: auto;
+}
+
+/* aling-self -> se pasa a uno varios elementos en particular 
+
+va a alinear en el eje transbersal a ese elemento unicamnete . y sobre escribe la propiedad de aling-items y su valor si se a declarado en el contenedor
+
+recibe los mismos valores que aling-items
+
+starty, end, center, astrecth, baseling
+
+
+*/
+
+
